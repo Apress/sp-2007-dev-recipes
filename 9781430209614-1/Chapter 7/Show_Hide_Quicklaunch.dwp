@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebPart xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/WebPart/v2">
+  <Title>Content Editor Web Part</Title>
+  <FrameType>Default</FrameType>
+  <Description>Use for formatted text, tables, and images.</Description>
+  <IsIncluded>true</IsIncluded>
+  <ZoneID>Left</ZoneID>
+  <PartOrder>0</PartOrder>
+  <FrameState>Normal</FrameState>
+  <Height />
+  <Width />
+  <AllowRemove>true</AllowRemove>
+  <AllowZoneChange>true</AllowZoneChange>
+  <AllowMinimize>true</AllowMinimize>
+  <AllowConnect>true</AllowConnect>
+  <AllowEdit>true</AllowEdit>
+  <AllowHide>true</AllowHide>
+  <IsVisible>true</IsVisible>
+  <DetailLink />
+  <HelpLink />
+  <HelpMode>Modeless</HelpMode>
+  <Dir>Default</Dir>
+  <PartImageSmall />
+  <MissingAssembly>Cannot import this Web Part.</MissingAssembly>
+  <PartImageLarge>/_layouts/images/mscontl.gif</PartImageLarge>
+  <IsIncludedFilter />
+  <Assembly>Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+  <TypeName>Microsoft.SharePoint.WebPartPages.ContentEditorWebPart</TypeName>
+  <ContentLink xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
+  <Content xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor"><![CDATA[<script>
+
+// Step 1: Add <a> tags to page to hold hide/show options
+document.write ('<a id="HideOption" href="javascript:Hide()" style="display:none"> Hide Quicklaunch menu</a>');
+document.write ('<a id="ShowOption" href="javascript:Show()">Show Quicklaunch menu</a>');
+
+// Step 2: Declare an array containing a list
+// of all page elements assigned the "ms-nav"
+// class
+var _NavElements = getElementsByClass("ms-nav");
+
+// Step 3: Read user's current show/hide preference
+// from local cookie
+var isQuickLaunchHidden = readCookie('isQuickLaunchHidden');
+
+// Step 4: Show or hide the quicklaunch
+// depending on user preference
+if (isQuickLaunchHidden == 'true')
+{
+  Hide();
+} else {
+  Show();
+}
+
+// Helper function to save a cookie representing user-specific
+// choice to show or hide the quicklaunch menu
+function createCookie(name,value,days) {
+	if (days) {
+		var date = new Date();
+		date.setTime(date.getTime()+(days*24*60*60*1000));
+		var expires = "; expires="+date.toGMTString();
+	}
+	else var expires = "";
+	document.cookie = name+"="+value+expires+"; path=/";
+}
+
+// Helper function to read the cookie to determine whether
+// the quicklaunch menu should be displayed
+function readCookie(name) {
+	var nameEQ = name + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0;i < ca.length;i++) {
+		var c = ca[i];
+		while (c.charAt(0)==' ') c = c.substring(1,c.length);
+		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+	}
+	return null;
+}
+
+// Helper function to delete a specified cookie
+function eraseCookie(name) {
+	createCookie(name,"",-1);
+}
+
+// Helper function to return an array of web
+// page elements of the specified class.  This
+// function is needed because SharePoint assigns
+// the quicklaunch a class, but not an ID.  
+// Otherwise we could use the native
+// GetElementById() JavaScript function.
+function getElementsByClass(searchClass,node,tag) {
+	var classElements = new Array();
+	if ( node == null )
+		node = document;
+	if ( tag == null )
+		tag = '*';
+	var els = node.getElementsByTagName(tag);
+	var elsLen = els.length;
+	var pattern = new RegExp('(^|\\s)'+searchClass+'(\\s|$)');
+	for (var i = 0, j = 0; i < elsLen; i++) {
+		if ( pattern.test(els[i].className) ) {
+			classElements[j] = els[i];
+			j++;
+		}
+	}
+	return classElements;
+}
+
+// Helper function to hide the quicklaunch
+function Hide()
+{
+  for (var i=0; i<_NavElements.length; i++)
+  {
+      _NavElements[i].style.display = "none";
+  }
+  document.getElementById("HideOption").style.display = "none";
+  document.getElementById("ShowOption").style.display = "";
+  createCookie ('isQuickLaunchHidden','true',365);
+}
+
+// Helper function to display the quicklaunch
+function Show()
+{
+  for (var i = 0; i<_NavElements.length; i++)
+  {
+      _NavElements[i].style.display = "";
+  }
+  document.getElementById("HideOption").style.display = "";
+  document.getElementById("ShowOption").style.display = "none";
+  createCookie ('isQuickLaunchHidden','false',365);
+}
+
+</script>]]></Content>
+  <PartStorage xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
+</WebPart>

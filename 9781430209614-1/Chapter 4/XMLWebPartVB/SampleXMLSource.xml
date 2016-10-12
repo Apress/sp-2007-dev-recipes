@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomerData>
+	<Customer>
+		<Name>ABC Corp.</Name>
+		<Address>100 Main Street</Address>
+		<Phone>(415) 999-1234</Phone>
+		<Order>
+			<OrderNo>1000</OrderNo>
+			<Product>Widgets</Product>
+			<Qty>10</Qty>
+			<UnitPrice>100</UnitPrice>
+			<ExtPrice>1000</ExtPrice>
+		</Order>
+		<Order>
+			<OrderNo>1001</OrderNo>
+			<Product>Gadget</Product>
+			<Qty>50</Qty>
+			<UnitPrice>50</UnitPrice>
+			<ExtPrice>2500</ExtPrice>
+		</Order>
+		<Order>
+			<OrderNo>0113</OrderNo>
+			<Product>WhatsIt</Product>
+			<Qty>100</Qty>
+			<UnitPrice>70</UnitPrice>
+			<ExtPrice>7000</ExtPrice>
+		</Order>
+	</Customer>
+	<Customer>
+		<Name>XYZ Inc.</Name>
+		<Address>123 Center Avenue</Address>
+		<Phone>(650) 789-1234</Phone>
+		<Order>
+			<OrderNo>2000</OrderNo>
+			<Product>Laptop</Product>
+			<Qty>10</Qty>
+			<UnitPrice>1000</UnitPrice>
+			<ExtPrice>10000</ExtPrice>
+		</Order>
+		<Order>
+			<OrderNo>2001</OrderNo>
+			<Product>Memory</Product>
+			<Qty>50</Qty>
+			<UnitPrice>100</UnitPrice>
+			<ExtPrice>5000</ExtPrice>
+		</Order>
+		<Order>
+			<OrderNo>2003</OrderNo>
+			<Product>LCD</Product>
+			<Qty>100</Qty>
+			<UnitPrice>300</UnitPrice>
+			<ExtPrice>30000</ExtPrice>
+		</Order>
+	</Customer>
+</CustomerData>

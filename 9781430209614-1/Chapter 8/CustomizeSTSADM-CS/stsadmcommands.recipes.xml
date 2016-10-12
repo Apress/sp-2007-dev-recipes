@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Step 1: Add references to the commands to be added -->
+<commands>
+    <command name="adddoclibtosite" class="CustomizeStsAdm.MyCustomizations, CustomizeSTSADM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=61edc6796f256444" />
+	<command name="addnoticetosite" class="CustomizeStsAdm.MyCustomizations, CustomizeSTSADM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=61edc6796f256444" />
+</commands>
+

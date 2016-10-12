@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebPart xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/WebPart/v2">
+  <Title>Content Editor Web Part</Title>
+  <FrameType>Default</FrameType>
+  <Description>Use for formatted text, tables, and images.</Description>
+  <IsIncluded>true</IsIncluded>
+  <ZoneID>Main</ZoneID>
+  <PartOrder>2</PartOrder>
+  <FrameState>Normal</FrameState>
+  <Height />
+  <Width />
+  <AllowRemove>true</AllowRemove>
+  <AllowZoneChange>true</AllowZoneChange>
+  <AllowMinimize>true</AllowMinimize>
+  <AllowConnect>true</AllowConnect>
+  <AllowEdit>true</AllowEdit>
+  <AllowHide>true</AllowHide>
+  <IsVisible>true</IsVisible>
+  <DetailLink />
+  <HelpLink />
+  <HelpMode>Modeless</HelpMode>
+  <Dir>Default</Dir>
+  <PartImageSmall />
+  <MissingAssembly>Cannot import this Web Part.</MissingAssembly>
+  <PartImageLarge>/_layouts/images/mscontl.gif</PartImageLarge>
+  <IsIncludedFilter />
+  <Assembly>Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+  <TypeName>Microsoft.SharePoint.WebPartPages.ContentEditorWebPart</TypeName>
+  <ContentLink xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
+  <Content xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor"><![CDATA[<script>
+var linkElement;
+
+var boolDebug = true;
+
+// flag, test var for "GoToLink" call
+// used on simple links
+var boolTrapGoToLink = true;
+var boolIsGoToLink = false;
+
+// flag, test var for "DispEx" call
+// used on links that have associated
+// context menus
+var boolTrapDispEx = true;
+var boolIsDispEx = false;
+
+// Step 1: loop through all links on page
+for (var i=0; i<document.links.length; i++)
+{
+
+   // Step 2: Get handle to current link
+   linkElement = document.links[i];
+
+   try {
+
+      // Step 3: Determine whether link has either of the
+      // href values sought
+      boolIsGoToLink = (linkElement.onclick.toString().indexOf("GoToLink") != -1) && boolTrapGoToLink;
+      boolIsDispEx = (linkElement.onclick.toString().indexOf("DispEx") != -1) && boolTrapDispEx;
+ 
+      // Step 4: If link requires fixup    
+      if ( boolIsGoToLink || boolIsDispEx ) {
+
+         // Step 5: Assign link's target to new window
+         linkElement.target = "_blank";
+
+         // Step 6: f debug flag on, print out key information
+         // for affected links
+         if (boolDebug) {
+
+            document.write("<br/>" + 
+               linkElement.Id + ": " + 
+               linkElement.innerText + ": " + 
+               linkElement.href + ": " + 
+               linkElement.target);
+
+            document.write("<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + 
+               linkElement.onclick);
+
+            document.write("<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" +
+               linkElement.onclick.toString().indexOf("GoToLink"));
+
+         }
+
+         // Step 7: clear onclick handler so .target
+         // parameter will be used to open
+         // link
+         linkElement.onclick = "";
+
+      }
+
+   } catch (e) {
+     //document.write(e);
+   }
+}
+</script>]]></Content>
+  <PartStorage xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
+</WebPart>

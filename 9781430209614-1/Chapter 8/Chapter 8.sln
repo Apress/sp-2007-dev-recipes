@@ -1,0 +1,102 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomizeSTSADM-CS", "Chapter 8\CustomizeSTSADM-CS.csproj", "{F70766E6-3745-4087-AC8B-20B7E32A3476}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CustomizeSTSADM-VB", "CustomizeSTSADM-VB\CustomizeSTSADM-VB.vbproj", "{1188ED4E-448D-4348-9F81-1B7270CC4BA5}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "C:\...\CustomizingSearch-CS\", "..\Chapter 6\CustomizingSearch-CS\", "{BDC1F6BB-3BCB-4F54-8B68-B4C96DBD58A3}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.VirtualPath = "/CustomizingSearch-CS"
+		Debug.AspNetCompiler.PhysicalPath = "..\Chapter 6\CustomizingSearch-CS\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\CustomizingSearch-CS\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/CustomizingSearch-CS"
+		Release.AspNetCompiler.PhysicalPath = "..\Chapter 6\CustomizingSearch-CS\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\CustomizingSearch-CS\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "4552"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "C:\...\CustomizingSearch-VB\", "CustomizingSearch-VB\", "{B521227C-7391-4C0F-BC4F-13D575B7983B}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.VirtualPath = "/CustomizingSearch-VB"
+		Debug.AspNetCompiler.PhysicalPath = "CustomizingSearch-VB\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\CustomizingSearch-VB\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/CustomizingSearch-VB"
+		Release.AspNetCompiler.PhysicalPath = "CustomizingSearch-VB\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\CustomizingSearch-VB\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "3436"
+		DefaultWebSiteLanguage = "Visual Basic"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|.NET = Release|.NET
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F70766E6-3745-4087-AC8B-20B7E32A3476}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{F70766E6-3745-4087-AC8B-20B7E32A3476}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F70766E6-3745-4087-AC8B-20B7E32A3476}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F70766E6-3745-4087-AC8B-20B7E32A3476}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F70766E6-3745-4087-AC8B-20B7E32A3476}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F70766E6-3745-4087-AC8B-20B7E32A3476}.Release|.NET.ActiveCfg = Release|Any CPU
+		{F70766E6-3745-4087-AC8B-20B7E32A3476}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F70766E6-3745-4087-AC8B-20B7E32A3476}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F70766E6-3745-4087-AC8B-20B7E32A3476}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F70766E6-3745-4087-AC8B-20B7E32A3476}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{1188ED4E-448D-4348-9F81-1B7270CC4BA5}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{1188ED4E-448D-4348-9F81-1B7270CC4BA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1188ED4E-448D-4348-9F81-1B7270CC4BA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1188ED4E-448D-4348-9F81-1B7270CC4BA5}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{1188ED4E-448D-4348-9F81-1B7270CC4BA5}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{1188ED4E-448D-4348-9F81-1B7270CC4BA5}.Release|.NET.ActiveCfg = Release|Any CPU
+		{1188ED4E-448D-4348-9F81-1B7270CC4BA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1188ED4E-448D-4348-9F81-1B7270CC4BA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1188ED4E-448D-4348-9F81-1B7270CC4BA5}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{1188ED4E-448D-4348-9F81-1B7270CC4BA5}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{BDC1F6BB-3BCB-4F54-8B68-B4C96DBD58A3}.Debug|.NET.ActiveCfg = Debug|.NET
+		{BDC1F6BB-3BCB-4F54-8B68-B4C96DBD58A3}.Debug|.NET.Build.0 = Debug|.NET
+		{BDC1F6BB-3BCB-4F54-8B68-B4C96DBD58A3}.Debug|Any CPU.ActiveCfg = Debug|.NET
+		{BDC1F6BB-3BCB-4F54-8B68-B4C96DBD58A3}.Debug|Mixed Platforms.ActiveCfg = Debug|.NET
+		{BDC1F6BB-3BCB-4F54-8B68-B4C96DBD58A3}.Debug|Mixed Platforms.Build.0 = Debug|.NET
+		{BDC1F6BB-3BCB-4F54-8B68-B4C96DBD58A3}.Release|.NET.ActiveCfg = Debug|.NET
+		{BDC1F6BB-3BCB-4F54-8B68-B4C96DBD58A3}.Release|.NET.Build.0 = Debug|.NET
+		{BDC1F6BB-3BCB-4F54-8B68-B4C96DBD58A3}.Release|Any CPU.ActiveCfg = Debug|.NET
+		{BDC1F6BB-3BCB-4F54-8B68-B4C96DBD58A3}.Release|Mixed Platforms.ActiveCfg = Debug|.NET
+		{BDC1F6BB-3BCB-4F54-8B68-B4C96DBD58A3}.Release|Mixed Platforms.Build.0 = Debug|.NET
+		{B521227C-7391-4C0F-BC4F-13D575B7983B}.Debug|.NET.ActiveCfg = Debug|.NET
+		{B521227C-7391-4C0F-BC4F-13D575B7983B}.Debug|.NET.Build.0 = Debug|.NET
+		{B521227C-7391-4C0F-BC4F-13D575B7983B}.Debug|Any CPU.ActiveCfg = Debug|.NET
+		{B521227C-7391-4C0F-BC4F-13D575B7983B}.Debug|Mixed Platforms.ActiveCfg = Debug|.NET
+		{B521227C-7391-4C0F-BC4F-13D575B7983B}.Debug|Mixed Platforms.Build.0 = Debug|.NET
+		{B521227C-7391-4C0F-BC4F-13D575B7983B}.Release|.NET.ActiveCfg = Debug|.NET
+		{B521227C-7391-4C0F-BC4F-13D575B7983B}.Release|.NET.Build.0 = Debug|.NET
+		{B521227C-7391-4C0F-BC4F-13D575B7983B}.Release|Any CPU.ActiveCfg = Debug|.NET
+		{B521227C-7391-4C0F-BC4F-13D575B7983B}.Release|Mixed Platforms.ActiveCfg = Debug|.NET
+		{B521227C-7391-4C0F-BC4F-13D575B7983B}.Release|Mixed Platforms.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

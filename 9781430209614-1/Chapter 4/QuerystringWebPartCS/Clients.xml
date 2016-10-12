@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Clients>
+	<Clients>
+		<ClientId>3001</ClientId>
+		<ClientName>General Gadgets</ClientName>
+		<Address>123 Middle Blvd</Address>
+		<ID>3</ID>
+		<ContentType>Item</ContentType>
+		<Modified>2008-02-24T08:54:47-08:00</Modified>
+		<Created>2008-02-24T08:54:47-08:00</Created>
+		<Author>System Account</Author>
+		<Editor>System Account</Editor>
+		<_UIVersionString>1.0</_UIVersionString>
+		<Attachments>0</Attachments>
+	</Clients>
+	<Clients>
+		<ClientId>2001</ClientId>
+		<ClientName>XYZ Corp</ClientName>
+		<Address>200 Center Avenue</Address>
+		<ID>2</ID>
+		<ContentType>Item</ContentType>
+		<Modified>2008-02-24T08:54:20-08:00</Modified>
+		<Created>2008-02-24T08:54:20-08:00</Created>
+		<Author>System Account</Author>
+		<Editor>System Account</Editor>
+		<_UIVersionString>1.0</_UIVersionString>
+		<Attachments>0</Attachments>
+	</Clients>
+	<Clients>
+		<Title>1001</Title>
+		<ClientId>1001</ClientId>
+		<ClientName>Acme Widgets</ClientName>
+		<Address>100 Main Street</Address>
+		<ID>1</ID>
+		<ContentType>Item</ContentType>
+		<Modified>2008-02-24T08:53:18-08:00</Modified>
+		<Created>2008-02-24T08:53:18-08:00</Created>
+		<Author>System Account</Author>
+		<Editor>System Account</Editor>
+		<_UIVersionString>1.0</_UIVersionString>
+		<Attachments>0</Attachments>
+		<LinkTitleNoMenu>1001</LinkTitleNoMenu>
+		<LinkTitle>1001</LinkTitle>
+	</Clients>
+</Clients>
